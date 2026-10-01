@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Urban Garden Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="#">Urban Garden Studio</a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a aria-current="page" href="#">Workshops</a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Media and typography lab</p>
+        <h1>Practice responsive media decisions with readable type.</h1>
+        <p>Replace the placeholder media paths with your own image variants, then document the format, size, source, and accessibility purpose.</p>
+      </div>
+      <figure class="hero-media">
+        <div class="placeholder-image"> <img src="assets/commercial1200.png" alt="A photo showcasing an array of Victorias Secret perfume atop a grassy background with  two flowers framing the top and bottom of the image" 
+          srcset="assets/Commercial600.png 600w, 
+                  assets/Commercial1200.png 1200w, 
+                  assets/Commercial1800.png 1800w"
+                  sizes="(min-width: 56em) 600px, 100vw"></div>
+        
+        <figcaption>
+          Page works as intended with zoom. I had a hard time reading exact times for tests on Firefox, and Chrome never triggers 600px image for some reason but 1800 and 1200 load at 5 and 9 ms.
+          <span>Accessibility: </span>Alt is picked out for image but aria-hidden=true for decorative SVG.Images ensure only what's needed for good image quality without unnecessary file size.
+          <span>Intrinsic/File Sizes: </span>600px(533 KB on computer, 728.99 KB on network),1200px(2 MB on computer, 2.8 MB on network),1800px(4.29 MB on computer, 6 MB on network)
+          <span>Format: </span> display sizes are 600px for screens who's min size is larger than the breakpoint and 100vw for the other two images.
+          <span>Sources: </span>assets/Commercial600.png 600w, assets/Commercial1200.png 1200w, assets/Commercial1800.png 1800w, svg coded in svg container.
+
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <defs>
+          <linearGradient id="gold">
+          </linearGradient>
+        </defs>
+        <svg class="section-icon"  alt="" width="48" height="48" viewbox="0 0 100 100" aria-hidden="true">
+          <circle class="heart"  cx="28" cy="40" r="25" />
+          <circle  class="heart" cx="72" cy="40" r="25"/>
+          <path class="heart" d="M 4 50 L 50 100 L 96 50 z" />
+        </svg>
+
+        <div>
+          <p class="eyebrow">Workshop cards</p>
+          <h2>Use type scale, line length, and media dimensions intentionally.</h2>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Container Herb Gardens</h3>
+          <p>Choose soil, drainage, light, and container size for small spaces.</p>
+          <a href="#">View guide</a>
+        </article>
+        <article class="card">
+          <h3>Accessible Path Planning</h3>
+          <p>Plan garden routes with surface, slope, seating, and turning space in mind.</p>
+          <a href="#">View guide</a>
+        </article>
+        <article class="card">
+          <h3>Summer Shade Setup</h3>
+          <p>Compare fabric, trellis, and plant-based shade strategies for heat protection.</p>
+          <a href="#">View guide</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section media-check">
+      <h2>Practice Embedding</h2>
+        <video src="assets\Sequence 01_YouTube_1.mp4" width="560" height="315"  controls>
+          <track kind="captions" src="assets/en-cap.vtt" srclang="en" label="English" default>
+          <p>Your browser doesn't support this package type, you can view the video with <a href="https://www.youtube.com/watch?v=ab2rpHJhlF8">this link</a></p>
+        </video>
+        
+     
+     
+    </section>
+  </main>
+</body>
+</html>
