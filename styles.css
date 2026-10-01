@@ -110,8 +110,6 @@
 @layer components {
   video::cue {
   font-size: 1.5rem;
-  background: white;
-  color: black;
 }
 
   .site-header {
