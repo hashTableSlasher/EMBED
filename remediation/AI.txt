@@ -1,0 +1,46 @@
+AI DISCLOSURE:
+------------------------
+    -I asked AI if I could use GIThub for hosting and asked about the difference 
+    between SRT and VTT
+------------------------
+REMEDIATION PLAN:
+------------------------
+    1. I want to optimize images on my site by using responsive media syntax in html
+    2. I want to create more dynamic font sizing using clamp
+    3. I want to add appropriate alts to images.
+------------------------
+EMBED I CHECKED
+------------------------
+Embedded video loads using preferred styling of captions. 
+It's a short clip of a  project I made for a video editing class 
+with captions I took a site I found when google automated captions which I checked to ensure accuracy
+    --------------
+    debugging/details 
+    --------------
+    I saw the documentation said you could use files but they might very well have to be hosted
+    I also saw it was possible and that there were a list of reasons including asynchronous loading 
+    which wasn't a part of my project so I tried, and live captions that weren't mine displayed- which I didn't notice at very first
+    But my video was too large for Github and said that I couldn't push anymore after commit 
+    so I thought I could only upload the txt files and link to published script, but that also said origin blocked
+    I tried looking for alternative videos that I could use that wouldn't be licensed with no look
+    So I figured I could delete repositories and I could just see if it worked but it wouldn't push the original either (I did end up deleting one and remaking but don't remember why)
+    I did not have any other video where captions were needed with audio 
+    So I shortened the video and tried again, but even after several attempts it didn't seem to be working
+    I didn't know that previous commits that didn't go through were stored in history and had to be deleted before current commit was possible with shortened video
+    Even though right clicking showed I could delete the most recent commit, I didn't see the option for the others when I right clicked
+    Eventually I realized you have to do them in order of most recent for the option to be shown on the previous so I did that
+    And it was up and showing but with the wrong time stamps, 
+    so I tried to change those , but it seemed to make no difference and I thought it was due to a syntax issue 
+    at different points it became a bit confusing to debug because I kept clicking on the newest commit after changing time stamps and things 
+    only to later realize some of the changes I was making weren't shown to me because of browser caching and not as much because my syntax 
+    which was flawed in some aspects but ultimately resulted in reverting files that were more correct as it didn't seem to show.
+
+CHECKLIST 
+------------------------
+1. Does the media have a clear purpose on page?
+    No, my aim was to find a video that I owned and didn't come with an Iframe tag so I could practice new syntax, this is just practice and I don't want to add it to my page.
+2. Does audio or video have captions, transcripts or another appropriate equivalent?
+    Yes.
+3. Are controls visible, keyboard reachable, and understandable?
+    Yes, they can be tabbed through and are understandable. 
+4. 

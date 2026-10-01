@@ -173,6 +173,12 @@
     border-radius: .5rem;
     background: var(--color-surface);
   }
+  @media (prefers-reduced-motion: reduce) {
+  .video-background {
+    display: none;
+  }
+  
+}
 }
 
 @layer utilities {
