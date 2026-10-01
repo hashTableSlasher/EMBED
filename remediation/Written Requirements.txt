@@ -43,4 +43,12 @@ CHECKLIST
     Yes.
 3. Are controls visible, keyboard reachable, and understandable?
     Yes, they can be tabbed through and are understandable. 
-4. 
+4. Does motion pause, stop, or respect reduced-motion preferences where needed?
+    Users who prefer reduced-motion will not have video displayed 
+5. Does an iframe or embed have a meaningful title?
+    I believe so I titled it music video project teaser.
+6. Is there a fallback link or alternate path if the external embed fails?
+    Yes.
+7. Does the media create a performance, privacy, or layout-shift risk?
+    I loaded metadata as the effect seems to be that captions appear more easily, I also specified width and height. Performance could be better if 
+    internet is bad I suppose,  but I thought it was better that the video not preload, and potentially hold things up if it was unnecessary/ someone didn't want to click.
